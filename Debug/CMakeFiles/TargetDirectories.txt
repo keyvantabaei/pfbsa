@@ -1,0 +1,8 @@
+/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/install/strip.dir
+/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/install/local.dir
+/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/install.dir
+/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/list_install_components.dir
+/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/rebuild_cache.dir
+/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/edit_cache.dir
+/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/B1.dir
+/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir

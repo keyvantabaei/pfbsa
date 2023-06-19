@@ -1,0 +1,28 @@
+#/pf/moderator/thickness 2 cm
+#/pf/reflector/thickness 2 cm
+#/pf/filter/thickness 1 cm
+#/pf/moderator/material Al
+#/pf/reflector/material pb
+#/pf/filter/material Bi
+
+/run/initialize
+/control/verbose  0
+/run/verbose 0
+/event/verbose    0
+/tracking/verbose 0
+
+
+/gps/particle neutron
+/gps/pos/type Beam
+/gps/ene/type Mono
+/gps/ene/mono 2.45 MeV
+/gps/pos/type Point
+/gps/ang/type iso
+#/gps/pos/shape Circle
+#/gps/pos/rot1 1 0 0
+#/gps/pos/rot2 0 0 1
+#/gps/pos/radius 2.25 cm
+/gps/pos/centre 0. 7 0. cm
+#/gps/direction 0 1 0
+
+/run/beamOn 1000000
