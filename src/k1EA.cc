@@ -49,8 +49,8 @@ detectorHC*  k1EA::GetDetectorHitsCollection(G4int hcID,const G4Event* event) co
 void k1EA::BeginOfEventAction(const G4Event* event)
 {
   G4int evtNb = event->GetEventID();
-  if (evtNb%100000000 == 0) 
-    G4cout << "\n---> Begin of event: " << evtNb/100000000 <<" "<< G4endl;
+  if (evtNb%1000000 == 0) 
+    G4cout << "\n---> Begin of event: " << evtNb/1000000 <<"k"<< G4endl;
  
 }
 
