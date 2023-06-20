@@ -24,6 +24,12 @@ void SetReflectorMaterial(G4String);
 void SetModeratorMaterial(G4String);
 void SetFilterMaterial(G4String);
 
+void SetCollimatorMaterial(G4String);
+void SetCollimatorLayerMaterial(G4String);
+void SetCollimatorLayerThickness(G4double);
+void SetCollimatorLength(G4double);
+void SetCollimatorHoleDiameter(G4double);
+
 G4ThreeVector _phantom_size;
 G4ThreeVector _cell_count;
 private:

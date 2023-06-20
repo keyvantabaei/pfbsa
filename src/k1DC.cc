@@ -69,31 +69,46 @@ SetSensitiveDetector(_collimator_detector_befor,_target);
 }
 void k1DC::SetModeratorThickness(G4double T)
 {
-//	geo->Tm = T;
+	geo->Tm = T;
 }
 void k1DC::SetReflectorThickness(G4double T)
 {
-//	geo->Tr = T;
+	geo->Tr = T;
 }
 void k1DC::SetFilterThickness(G4double T)
 {
-//	geo->filter_thickness = T;
+	geo->filter_thickness = T;
 }
 void k1DC::SetModeratorMaterial(G4String str)
 {
-//	geo->MModeratorSTR = str;
+	geo->MModeratorSTR = str;
 }
 void k1DC::SetReflectorMaterial(G4String str)
 {
-//	geo->MReflectorSTR = str;
+	geo->MReflectorSTR = str;
 }
 void k1DC::SetFilterMaterial(G4String str)
 {
-//	geo->MFilterSTR = str;
+	geo->MFilterSTR = str;
 }
+void k1DC::SetCollimatorMaterial(G4String str)
+{
+	geo->MCollimatorSTR = str;
+}
+void k1DC::SetCollimatorLayerMaterial(G4String str)
+{
+	geo->MCollimatorLayerSTR = str;
+}
+void k1DC::SetCollimatorLayerThickness(G4double T)
+{	geo->divergent_coll_layer_thickness = T;
+}
+void k1DC::SetCollimatorLength(G4double T)
+{
 
-
-
-
-
+	geo->divergent_coll_length = T;
+}
+void k1DC::SetCollimatorHoleDiameter(G4double T)
+{
+	geo->divergent_coll_radii=T/2;
+}
 

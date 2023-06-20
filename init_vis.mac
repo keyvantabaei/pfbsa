@@ -1,4 +1,17 @@
-# Macro file for the initialization of example B1
+/pf/moderator/thickness 2 cm
+/pf/reflector/thickness 2 cm
+/pf/filter/thickness 1 cm
+
+/pf/moderator/material polyE
+/pf/reflector/material pb
+/pf/filter/material Bi
+/pf/collimator/material polyE
+/pf/collimator/layermaterial polyE
+
+/pf/collimator/length 40 cm
+/pf/collimator/holediameter 1 cm
+/pf/collimator/layerthickness 2 cm
+
 # in interactive session
 #
 # Set some default verbose

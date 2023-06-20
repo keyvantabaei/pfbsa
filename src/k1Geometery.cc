@@ -61,6 +61,8 @@ G4double divergent_coll_layer_thickness = 1*cm; //collimator layer thickness
 G4String MReflectorSTR=  "pb";
 G4String MModeratorSTR=  "polyE";
 G4String MFilterSTR=  "Bi";
+G4String MCollimatorLayerSTR=  "polyE";
+G4String MCollimatorSTR=  "polyE";
 
 
 
@@ -205,8 +207,8 @@ G4Material* Mreflector=create_material(MReflectorSTR);
 G4Material* Minsulator=create_material("pyrex");
 G4Material* Mcathode=create_material("cu");
 G4Material* Manode=create_material("cu");
-G4Material* Mcollimator=create_material("polyE");
-G4Material* Mcollimator_layer=create_material("polyE");
+G4Material* Mcollimator=create_material(MCollimatorSTR);
+G4Material* Mcollimator_layer=create_material(MCollimatorLayerSTR);
 //G4Material* Mgas=create_material("steel");
 G4Material* Mfilter=create_material(MFilterSTR);
 G4Material* Mwall=create_material("polyE");
@@ -350,11 +352,11 @@ new G4PVPlacement(myRotation0,G4ThreeVector(0,L/2+l+filter_thickness+Tr+Tm+detec
 //divergent collimator
 G4VSolid* _tubeS = new G4Tubs("divergentcosllS",0,r,divergent_coll_length/2,0,360*deg);
 //G4VSolid* _tubeS = new G4Box("",r,r,divergent_coll_length/2);
-G4VSolid* _coneS=new G4Cons("divergentcollS",0,divergent_coll_radii,0,r,divergent_coll_length/2+1*mm,0,360*deg); //collimator
+G4VSolid* _coneS=new G4Cons("divergentcollS",0,divergent_coll_radii+divergent_coll_layer_thickness,0,r,divergent_coll_length/2+1*mm,0,360*deg); //collimator
 G4SubtractionSolid* _collimatorS = new G4SubtractionSolid("collimatorS",_tubeS,_coneS,new G4RotationMatrix(),G4ThreeVector());
 G4LogicalVolume* _collimatorL = new G4LogicalVolume(_collimatorS,Mcollimator,"collimatorL");
 
-G4VSolid* _coneS_layer=new G4Cons("divergentcollS_layer",divergent_coll_radii-divergent_coll_layer_thickness,divergent_coll_radii-.1*mm,r-divergent_coll_layer_thickness,r-.1*mm,divergent_coll_length/2,0,360*deg); // collimator layer
+G4VSolid* _coneS_layer=new G4Cons("divergentcollS_layer",divergent_coll_radii,divergent_coll_layer_thickness-.3*mm,r-divergent_coll_layer_thickness,r-.3*mm,divergent_coll_length/2,0,360*deg); // collimator layer
 G4LogicalVolume* _collimator_layer_L = new G4LogicalVolume(_coneS_layer,Mcollimator_layer,"collimato_layer_L");
 
 new G4PVPlacement(new G4RotationMatrix(0,-90*deg,0),G4ThreeVector(0,detector_befor_t+L/2+l+divergent_coll_length/2+filter_thickness+Tr+Tm,0),_collimatorL,"collimatorP",mother_logic,false,0,true);

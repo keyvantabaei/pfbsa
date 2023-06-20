@@ -1,9 +1,18 @@
-#/pf/moderator/thickness 2 cm
-#/pf/reflector/thickness 2 cm
-#/pf/filter/thickness 1 cm
-#/pf/moderator/material Al
-#/pf/reflector/material pb
-#/pf/filter/material Bi
+/pf/moderator/thickness 2 cm
+/pf/reflector/thickness 2 cm
+/pf/filter/thickness 1 cm
+
+/pf/moderator/material polyE
+/pf/reflector/material pb
+/pf/filter/material Bi
+/pf/collimator/material polyE
+/pf/collimator/layermaterial polyE_borated
+
+/pf/collimator/length 40 cm
+/pf/collimator/holediameter 1 cm
+/pf/collimator/layerthickness 2 cm
+
+/pf/filter/material Bi
 
 /run/initialize
 /control/verbose  0

@@ -52,37 +52,29 @@ void k1RA::BeginOfRunAction(const G4Run* run)
  
  // Open an output file
 //
-G4String fileName = "B4.root";
-  // Other supported output types:
-  // G4String fileName = "B4.csv";
-  // G4String fileName = "B4.hdf5";
-  // G4String fileName = "B4.xml";
-  analysisManager->OpenFile(fileName);
-  //inform the runManager to save random number seed
-  G4RunManager::GetRunManager()->SetRandomNumberStore(false);
+G4String fileName = "pfBSA.root";
+analysisManager->OpenFile(fileName);
+//inform the runManager to save random number seed
+G4RunManager::GetRunManager()->SetRandomNumberStore(false);
 }
 
 void k1RA::EndOfRunAction(const G4Run* run)
 {
-	G4int NoEvt = run->GetNumberOfEvent();
-	if(NoEvt == 0)return;
-	G4AccumulableManager* accumulable = G4AccumulableManager::Instance();
-	accumulable->Merge();
-	auto analysisManager = G4AnalysisManager::Instance();
-  G4int nofEvents = run->GetNumberOfEvent();
-  if (nofEvents == 0) return;
-   analysisManager->Write();
-   analysisManager->CloseFile();
-   //Error calculation
-   G4double variance = collimator_phantom_dose2.GetValue() - collimator_phantom_dose.GetValue()*collimator_phantom_dose.GetValue()/NoEvt;
-   variance = std::sqrt(variance);
-   if(IsMaster())
-   {
-	   G4cout<< "Collimator Phantom Dose = "<<G4BestUnit(collimator_phantom_dose.GetValue(),"Dose")<<G4endl;
-	   G4cout<< "Collimator Phantom Dose Variance = "<<G4BestUnit(variance,"Dose")<<G4endl;
-	   G4cout<< "Around Phantom Dose = "<<G4BestUnit(around_phantom_dose.GetValue(),"Dose")<<G4endl;
-   }
-//  _histo->Save();
-  // Run* _run = static_cast<Run*>(G4RunManager::GetRunManager()->GetNonConstCurrentRun());
-  // G4cout<<"Total ph_Electrons Number = "<<_run->Get_Photoelectron_Total_Number()<<G4endl;
+G4int NoEvt = run->GetNumberOfEvent();
+if(NoEvt == 0)return;
+G4AccumulableManager* accumulable = G4AccumulableManager::Instance();
+accumulable->Merge();
+auto analysisManager = G4AnalysisManager::Instance();
+analysisManager->Write();
+analysisManager->CloseFile();
+//Error calculation
+G4double variance_collimator = collimator_phantom_dose2.GetValue() - collimator_phantom_dose.GetValue()*collimator_phantom_dose.GetValue()/NoEvt;
+G4double variance_around = around_phantom_dose2.GetValue() - around_phantom_dose.GetValue()*around_phantom_dose.GetValue()/NoEvt;
+variance_collimator = std::sqrt(variance_collimator);
+variance_around = std::sqrt(variance_around);
+if(IsMaster())
+{
+G4cout<< "Collimator Phantom Dose = "<<G4BestUnit(collimator_phantom_dose.GetValue(),"Dose")<<" +- "<<G4BestUnit(variance_collimator,"Dose")<<G4endl;
+G4cout<< "Around Phantom Dose = "<<G4BestUnit(around_phantom_dose.GetValue(),"Dose")<<" +- "<<G4BestUnit(variance_around,"Dose")<<G4endl;
+}
 }
