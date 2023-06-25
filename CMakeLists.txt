@@ -46,11 +46,8 @@ target_link_libraries(k1 ${Geant4_LIBRARIES} ${ROOT_LIBRARIES})
 set(EXAMPLEB1_SCRIPTS
   init_vis.mac
   vis.mac
-  pointsource.mac
   nsource.mac
-  circlesource2keV.mac
   plot.c
-  volumesource.mac
   )
 
 foreach(_script ${EXAMPLEB1_SCRIPTS})

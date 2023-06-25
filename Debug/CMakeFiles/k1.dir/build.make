@@ -128,22 +128,9 @@ CMakeFiles/k1.dir/src/HistoManager.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k1.dir/src/HistoManager.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/k1/prj/g4/pfBSA/src/HistoManager.cc -o CMakeFiles/k1.dir/src/HistoManager.cc.s
 
-CMakeFiles/k1.dir/src/PhysicsList.cc.o: CMakeFiles/k1.dir/flags.make
-CMakeFiles/k1.dir/src/PhysicsList.cc.o: ../src/PhysicsList.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/k1.dir/src/PhysicsList.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/PhysicsList.cc.o -c /home/k1/prj/g4/pfBSA/src/PhysicsList.cc
-
-CMakeFiles/k1.dir/src/PhysicsList.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k1.dir/src/PhysicsList.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/k1/prj/g4/pfBSA/src/PhysicsList.cc > CMakeFiles/k1.dir/src/PhysicsList.cc.i
-
-CMakeFiles/k1.dir/src/PhysicsList.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k1.dir/src/PhysicsList.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/k1/prj/g4/pfBSA/src/PhysicsList.cc -o CMakeFiles/k1.dir/src/PhysicsList.cc.s
-
 CMakeFiles/k1.dir/src/k1AI.cc.o: CMakeFiles/k1.dir/flags.make
 CMakeFiles/k1.dir/src/k1AI.cc.o: ../src/k1AI.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/k1.dir/src/k1AI.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/k1.dir/src/k1AI.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/k1AI.cc.o -c /home/k1/prj/g4/pfBSA/src/k1AI.cc
 
 CMakeFiles/k1.dir/src/k1AI.cc.i: cmake_force
@@ -156,7 +143,7 @@ CMakeFiles/k1.dir/src/k1AI.cc.s: cmake_force
 
 CMakeFiles/k1.dir/src/k1DC.cc.o: CMakeFiles/k1.dir/flags.make
 CMakeFiles/k1.dir/src/k1DC.cc.o: ../src/k1DC.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/k1.dir/src/k1DC.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/k1.dir/src/k1DC.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/k1DC.cc.o -c /home/k1/prj/g4/pfBSA/src/k1DC.cc
 
 CMakeFiles/k1.dir/src/k1DC.cc.i: cmake_force
@@ -169,7 +156,7 @@ CMakeFiles/k1.dir/src/k1DC.cc.s: cmake_force
 
 CMakeFiles/k1.dir/src/k1DM.cc.o: CMakeFiles/k1.dir/flags.make
 CMakeFiles/k1.dir/src/k1DM.cc.o: ../src/k1DM.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/k1.dir/src/k1DM.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/k1.dir/src/k1DM.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/k1DM.cc.o -c /home/k1/prj/g4/pfBSA/src/k1DM.cc
 
 CMakeFiles/k1.dir/src/k1DM.cc.i: cmake_force
@@ -182,7 +169,7 @@ CMakeFiles/k1.dir/src/k1DM.cc.s: cmake_force
 
 CMakeFiles/k1.dir/src/k1EA.cc.o: CMakeFiles/k1.dir/flags.make
 CMakeFiles/k1.dir/src/k1EA.cc.o: ../src/k1EA.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/k1.dir/src/k1EA.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/k1.dir/src/k1EA.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/k1EA.cc.o -c /home/k1/prj/g4/pfBSA/src/k1EA.cc
 
 CMakeFiles/k1.dir/src/k1EA.cc.i: cmake_force
@@ -195,7 +182,7 @@ CMakeFiles/k1.dir/src/k1EA.cc.s: cmake_force
 
 CMakeFiles/k1.dir/src/k1Geometery.cc.o: CMakeFiles/k1.dir/flags.make
 CMakeFiles/k1.dir/src/k1Geometery.cc.o: ../src/k1Geometery.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/k1.dir/src/k1Geometery.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/k1.dir/src/k1Geometery.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/k1Geometery.cc.o -c /home/k1/prj/g4/pfBSA/src/k1Geometery.cc
 
 CMakeFiles/k1.dir/src/k1Geometery.cc.i: cmake_force
@@ -208,7 +195,7 @@ CMakeFiles/k1.dir/src/k1Geometery.cc.s: cmake_force
 
 CMakeFiles/k1.dir/src/k1PG.cc.o: CMakeFiles/k1.dir/flags.make
 CMakeFiles/k1.dir/src/k1PG.cc.o: ../src/k1PG.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/k1.dir/src/k1PG.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/k1.dir/src/k1PG.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/k1PG.cc.o -c /home/k1/prj/g4/pfBSA/src/k1PG.cc
 
 CMakeFiles/k1.dir/src/k1PG.cc.i: cmake_force
@@ -221,7 +208,7 @@ CMakeFiles/k1.dir/src/k1PG.cc.s: cmake_force
 
 CMakeFiles/k1.dir/src/k1RA.cc.o: CMakeFiles/k1.dir/flags.make
 CMakeFiles/k1.dir/src/k1RA.cc.o: ../src/k1RA.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/k1.dir/src/k1RA.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/k1.dir/src/k1RA.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/k1RA.cc.o -c /home/k1/prj/g4/pfBSA/src/k1RA.cc
 
 CMakeFiles/k1.dir/src/k1RA.cc.i: cmake_force
@@ -232,22 +219,9 @@ CMakeFiles/k1.dir/src/k1RA.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k1.dir/src/k1RA.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/k1/prj/g4/pfBSA/src/k1RA.cc -o CMakeFiles/k1.dir/src/k1RA.cc.s
 
-CMakeFiles/k1.dir/src/k1StackA.cc.o: CMakeFiles/k1.dir/flags.make
-CMakeFiles/k1.dir/src/k1StackA.cc.o: ../src/k1StackA.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/k1.dir/src/k1StackA.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/k1StackA.cc.o -c /home/k1/prj/g4/pfBSA/src/k1StackA.cc
-
-CMakeFiles/k1.dir/src/k1StackA.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k1.dir/src/k1StackA.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/k1/prj/g4/pfBSA/src/k1StackA.cc > CMakeFiles/k1.dir/src/k1StackA.cc.i
-
-CMakeFiles/k1.dir/src/k1StackA.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k1.dir/src/k1StackA.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/k1/prj/g4/pfBSA/src/k1StackA.cc -o CMakeFiles/k1.dir/src/k1StackA.cc.s
-
 CMakeFiles/k1.dir/src/phantomHit.cc.o: CMakeFiles/k1.dir/flags.make
 CMakeFiles/k1.dir/src/phantomHit.cc.o: ../src/phantomHit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/k1.dir/src/phantomHit.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/k1.dir/src/phantomHit.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/phantomHit.cc.o -c /home/k1/prj/g4/pfBSA/src/phantomHit.cc
 
 CMakeFiles/k1.dir/src/phantomHit.cc.i: cmake_force
@@ -260,7 +234,7 @@ CMakeFiles/k1.dir/src/phantomHit.cc.s: cmake_force
 
 CMakeFiles/k1.dir/src/phantomSD.cc.o: CMakeFiles/k1.dir/flags.make
 CMakeFiles/k1.dir/src/phantomSD.cc.o: ../src/phantomSD.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/k1.dir/src/phantomSD.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/k1.dir/src/phantomSD.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k1.dir/src/phantomSD.cc.o -c /home/k1/prj/g4/pfBSA/src/phantomSD.cc
 
 CMakeFiles/k1.dir/src/phantomSD.cc.i: cmake_force
@@ -277,7 +251,6 @@ k1_OBJECTS = \
 "CMakeFiles/k1.dir/src/Detector.cc.o" \
 "CMakeFiles/k1.dir/src/DetectorHit.cc.o" \
 "CMakeFiles/k1.dir/src/HistoManager.cc.o" \
-"CMakeFiles/k1.dir/src/PhysicsList.cc.o" \
 "CMakeFiles/k1.dir/src/k1AI.cc.o" \
 "CMakeFiles/k1.dir/src/k1DC.cc.o" \
 "CMakeFiles/k1.dir/src/k1DM.cc.o" \
@@ -285,7 +258,6 @@ k1_OBJECTS = \
 "CMakeFiles/k1.dir/src/k1Geometery.cc.o" \
 "CMakeFiles/k1.dir/src/k1PG.cc.o" \
 "CMakeFiles/k1.dir/src/k1RA.cc.o" \
-"CMakeFiles/k1.dir/src/k1StackA.cc.o" \
 "CMakeFiles/k1.dir/src/phantomHit.cc.o" \
 "CMakeFiles/k1.dir/src/phantomSD.cc.o"
 
@@ -296,7 +268,6 @@ k1: CMakeFiles/k1.dir/k1.cc.o
 k1: CMakeFiles/k1.dir/src/Detector.cc.o
 k1: CMakeFiles/k1.dir/src/DetectorHit.cc.o
 k1: CMakeFiles/k1.dir/src/HistoManager.cc.o
-k1: CMakeFiles/k1.dir/src/PhysicsList.cc.o
 k1: CMakeFiles/k1.dir/src/k1AI.cc.o
 k1: CMakeFiles/k1.dir/src/k1DC.cc.o
 k1: CMakeFiles/k1.dir/src/k1DM.cc.o
@@ -304,7 +275,6 @@ k1: CMakeFiles/k1.dir/src/k1EA.cc.o
 k1: CMakeFiles/k1.dir/src/k1Geometery.cc.o
 k1: CMakeFiles/k1.dir/src/k1PG.cc.o
 k1: CMakeFiles/k1.dir/src/k1RA.cc.o
-k1: CMakeFiles/k1.dir/src/k1StackA.cc.o
 k1: CMakeFiles/k1.dir/src/phantomHit.cc.o
 k1: CMakeFiles/k1.dir/src/phantomSD.cc.o
 k1: CMakeFiles/k1.dir/build.make
@@ -375,7 +345,7 @@ k1: /home/k1/apps/g4/install/lib/libG4global.so
 k1: /home/k1/apps/g4/install/lib/libG4clhep.so
 k1: /home/k1/apps/g4/install/lib/libG4ptl.so.2.3.3
 k1: CMakeFiles/k1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable k1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/k1/prj/g4/pfBSA/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable k1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/k1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

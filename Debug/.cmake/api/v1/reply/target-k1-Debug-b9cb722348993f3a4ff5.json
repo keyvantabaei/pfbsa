@@ -33,7 +33,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 76,
+				"line" : 73,
 				"parent" : 0
 			},
 			{
@@ -55,6 +55,9 @@
 		{
 			"compileCommandFragments" : 
 			[
+				{
+					"fragment" : "-g"
+				},
 				{
 					"backtrace" : 3,
 					"fragment" : "-pthread"
@@ -128,10 +131,6 @@
 				{
 					"backtrace" : 3,
 					"define" : "QT_GUI_LIB"
-				},
-				{
-					"backtrace" : 3,
-					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 3,
@@ -212,9 +211,7 @@
 				9,
 				10,
 				11,
-				12,
-				13,
-				14
+				12
 			]
 		}
 	],
@@ -237,6 +234,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -591,15 +592,15 @@
 				9,
 				10,
 				11,
-				12,
-				13,
-				14
+				12
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
+				13,
+				14,
 				15,
 				16,
 				17,
@@ -608,11 +609,7 @@
 				20,
 				21,
 				22,
-				23,
-				24,
-				25,
-				26,
-				27
+				23
 			]
 		}
 	],
@@ -640,12 +637,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/HistoManager.cc",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/PhysicsList.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -693,12 +684,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/k1StackA.cc",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "src/phantomHit.cc",
 			"sourceGroupIndex" : 0
 		},
@@ -721,11 +706,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "include/HistoManager.hh",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "include/PhysicsList.hh",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -756,11 +736,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "include/k1RA.hh",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "include/k1StackA.hh",
 			"sourceGroupIndex" : 1
 		},
 		{

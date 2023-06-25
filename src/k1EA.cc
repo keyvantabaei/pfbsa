@@ -49,9 +49,8 @@ detectorHC*  k1EA::GetDetectorHitsCollection(G4int hcID,const G4Event* event) co
 void k1EA::BeginOfEventAction(const G4Event* event)
 {
   G4int evtNb = event->GetEventID();
-  if (evtNb%1000000 == 0) 
-    G4cout << "\n---> Begin of event: " << evtNb/1000000 <<"k"<< G4endl;
- 
+  if (evtNb%1000000 == 0 && evtNb/1000000 != 0 ) 
+    G4cout << "\n---> Begin of event: " << evtNb/1000000 <<" M"<< G4endl;
 }
 
 void k1EA::EndOfEventAction(const G4Event* event)
@@ -82,15 +81,14 @@ G4int around_phantom_ID = G4SDManager::GetSDMpointer()->GetCollectionID("phantom
 	around_phantom_dose += *(around_it->second);
 
  }
-//G4cout<<"DOOOOOOOOOOOOOOOOOOOSE : "<<collimator_phantom_dose<<G4endl;
 // add dose to RunAction Class
 _runAction->Add_Collimator_Phantom_Dose(collimator_phantom_dose);
 _runAction->Add_Around_Phantom_Dose(around_phantom_dose);
 //Get hits collections IDs (only once)
-  if ( _neutron_HCID == -1 ) 
-  _neutron_HCID = G4SDManager::GetSDMpointer()->GetCollectionID("electron");
-  if ( _photon_HCID == -1 ) 
-  _photon_HCID = G4SDManager::GetSDMpointer()->GetCollectionID("photon");
+if ( _neutron_HCID == -1 ) 
+_neutron_HCID = G4SDManager::GetSDMpointer()->GetCollectionID("electron");
+if ( _photon_HCID == -1 ) 
+_photon_HCID = G4SDManager::GetSDMpointer()->GetCollectionID("photon");
 
 // Get HCs object
 auto _phantomHC = GetphantomHitsCollection(_photon_HCID, event);
@@ -100,31 +98,19 @@ auto _DetectorHC = GetDetectorHitsCollection(_neutron_HCID, event);
 auto phantomHC_lenght = _phantomHC->entries();
 auto DetectorHC_lenght = _DetectorHC->entries();
 
-//photon energy
-//G4double photon_energy = 0;
-////photon
+// Fill Histograms by neutrons
 auto analysisManager = G4AnalysisManager::Instance();
 for(size_t i=0;i<phantomHC_lenght;i++)
 {
   auto _hit = (*_phantomHC)[i];
   G4double neutron_energy_befor=_hit->Get_Neutron_Energy();
-  // fill histograms
   analysisManager->FillH1(1, neutron_energy_befor);
 }
-//electron
-
 for(size_t i=0;i<DetectorHC_lenght;i++)
 {
   auto _hit = (*_DetectorHC)[i];
   G4double neutron_energy=_hit->Get_Neutron_Energy();
-
-  // fill histograms
   analysisManager->FillH1(0, neutron_energy);
-  // G4cout<<std::ceil(1.0)<<G4endl;
-  // (photon_energy<=1000) ? G4cout<<"----- >>"<<(photon_energy-100)/100<<G4endl : G4cout<<"----- >>"<<(photon_energy-1000)/1000 +9 <<G4endl;
-  //energy index calculation
-//  _histo->Set_Neutron_Energy(neutron_energy,(photon_energy<1000) ? (G4int)(photon_energy-100)/100 : (G4int)((photon_energy-1000)/1000 + 9));
-//  _histo->Set_Neutron_Energy(neutron_energy);
 }
 
 

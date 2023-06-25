@@ -309,33 +309,6 @@ src/HistoManager.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/k1.dir/build.make CMakeFiles/k1.dir/src/HistoManager.cc.s
 .PHONY : src/HistoManager.cc.s
 
-src/PhysicsList.o: src/PhysicsList.cc.o
-
-.PHONY : src/PhysicsList.o
-
-# target to build an object file
-src/PhysicsList.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/k1.dir/build.make CMakeFiles/k1.dir/src/PhysicsList.cc.o
-.PHONY : src/PhysicsList.cc.o
-
-src/PhysicsList.i: src/PhysicsList.cc.i
-
-.PHONY : src/PhysicsList.i
-
-# target to preprocess a source file
-src/PhysicsList.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/k1.dir/build.make CMakeFiles/k1.dir/src/PhysicsList.cc.i
-.PHONY : src/PhysicsList.cc.i
-
-src/PhysicsList.s: src/PhysicsList.cc.s
-
-.PHONY : src/PhysicsList.s
-
-# target to generate assembly for a file
-src/PhysicsList.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/k1.dir/build.make CMakeFiles/k1.dir/src/PhysicsList.cc.s
-.PHONY : src/PhysicsList.cc.s
-
 src/k1AI.o: src/k1AI.cc.o
 
 .PHONY : src/k1AI.o
@@ -525,33 +498,6 @@ src/k1RA.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/k1.dir/build.make CMakeFiles/k1.dir/src/k1RA.cc.s
 .PHONY : src/k1RA.cc.s
 
-src/k1StackA.o: src/k1StackA.cc.o
-
-.PHONY : src/k1StackA.o
-
-# target to build an object file
-src/k1StackA.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/k1.dir/build.make CMakeFiles/k1.dir/src/k1StackA.cc.o
-.PHONY : src/k1StackA.cc.o
-
-src/k1StackA.i: src/k1StackA.cc.i
-
-.PHONY : src/k1StackA.i
-
-# target to preprocess a source file
-src/k1StackA.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/k1.dir/build.make CMakeFiles/k1.dir/src/k1StackA.cc.i
-.PHONY : src/k1StackA.cc.i
-
-src/k1StackA.s: src/k1StackA.cc.s
-
-.PHONY : src/k1StackA.s
-
-# target to generate assembly for a file
-src/k1StackA.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/k1.dir/build.make CMakeFiles/k1.dir/src/k1StackA.cc.s
-.PHONY : src/k1StackA.cc.s
-
 src/phantomHit.o: src/phantomHit.cc.o
 
 .PHONY : src/phantomHit.o
@@ -632,9 +578,6 @@ help:
 	@echo "... src/HistoManager.o"
 	@echo "... src/HistoManager.i"
 	@echo "... src/HistoManager.s"
-	@echo "... src/PhysicsList.o"
-	@echo "... src/PhysicsList.i"
-	@echo "... src/PhysicsList.s"
 	@echo "... src/k1AI.o"
 	@echo "... src/k1AI.i"
 	@echo "... src/k1AI.s"
@@ -656,9 +599,6 @@ help:
 	@echo "... src/k1RA.o"
 	@echo "... src/k1RA.i"
 	@echo "... src/k1RA.s"
-	@echo "... src/k1StackA.o"
-	@echo "... src/k1StackA.i"
-	@echo "... src/k1StackA.s"
 	@echo "... src/phantomHit.o"
 	@echo "... src/phantomHit.i"
 	@echo "... src/phantomHit.s"

@@ -17,6 +17,7 @@ public:
 	void SetNewValue(G4UIcommand*,G4String) override;
 
 private:
+	//Define dir and UIcmds for commands
 	k1DC* _DC;
 	G4UIdirectory* _UIdir;
 	G4UIdirectory* _UIbodydir;

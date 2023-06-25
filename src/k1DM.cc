@@ -17,13 +17,14 @@ k1DM::k1DM(k1DC* dc):G4UImessenger(),
 	_UIScmdFilterMaterial(0),
 	_UIDAUcmdFilterThickness(0)
 {
+	//define directories
 	_UIdir = new G4UIdirectory("/pf/");
 	_UIbodydir= new G4UIdirectory("/pf/body/");
 	_UImoderator= new G4UIdirectory("/pf/moderator/");
 	_UIfilter = new G4UIdirectory("/pf/filter/");
 	_UIcollimatordir = new G4UIdirectory("/pf/collimator/");
 
-
+	//define UIcmds
 	_UIDAUcmdModeratorThickness = new G4UIcmdWithADoubleAndUnit("/pf/moderator/thickness",this);
 	_UIDAUcmdModeratorThickness->SetParameterName("MThick",false);
         _UIDAUcmdModeratorThickness->SetRange("MThick>0");
@@ -56,7 +57,6 @@ k1DM::k1DM(k1DC* dc):G4UImessenger(),
 	
 	_UIScmdReflectorMaterial = new G4UIcmdWithAString("/pf/reflector/material",this);
 
-	//filter
 	_UIDAUcmdFilterThickness = new G4UIcmdWithADoubleAndUnit("/pf/filter/thickness",this);
 	_UIDAUcmdFilterThickness->SetParameterName("FThick",false);
         _UIDAUcmdFilterThickness->SetRange("FThick>0");
@@ -86,19 +86,18 @@ delete _UIDAUcmdCollimatorLength;
 
 void k1DM::SetNewValue(G4UIcommand* _UIcmd,G4String newValue)
 {
-
-	if(_UIcmd == _UIDAUcmdModeratorThickness) {_DC -> SetModeratorThickness(_UIDAUcmdModeratorThickness->GetNewDoubleValue(newValue));}
-	if(_UIcmd == _UIDAUcmdReflectorThickness) {_DC -> SetReflectorThickness(_UIDAUcmdReflectorThickness->GetNewDoubleValue(newValue));}
-	if(_UIcmd == _UIDAUcmdFilterThickness) {_DC -> SetFilterThickness(_UIDAUcmdFilterThickness->GetNewDoubleValue(newValue));}
-	if(_UIcmd == _UIDAUcmdCollimatorDiameter) {_DC -> SetCollimatorHoleDiameter(_UIDAUcmdCollimatorDiameter->GetNewDoubleValue(newValue));}
-	if(_UIcmd == _UIDAUcmdCollimatorLiningThickness) {_DC->SetCollimatorLayerThickness(_UIDAUcmdCollimatorLiningThickness->GetNewDoubleValue(newValue));}
-	if(_UIcmd == _UIDAUcmdCollimatorLength) {_DC -> SetCollimatorLength(_UIDAUcmdCollimatorLength->GetNewDoubleValue(newValue));}
-	if(_UIcmd == _UIScmdFilterMaterial) {_DC -> SetFilterMaterial(newValue);}
-	if(_UIcmd == _UIScmdReflectorMaterial) {_DC -> SetReflectorMaterial(newValue);}
-	if(_UIcmd == _UIScmdModeratorMaterial) {_DC -> SetModeratorMaterial(newValue);}
-	if(_UIcmd == _UIScmdCollimatorMaterial) {_DC -> SetCollimatorMaterial(newValue);}
-	if(_UIcmd == _UIScmdCollimatorLiningMaterial) {_DC -> SetCollimatorLayerMaterial(newValue);}
-
+//invoce function in DC for making chaneg in Geo
+if(_UIcmd == _UIDAUcmdModeratorThickness) {_DC -> SetModeratorThickness(_UIDAUcmdModeratorThickness->GetNewDoubleValue(newValue));}
+if(_UIcmd == _UIDAUcmdReflectorThickness) {_DC -> SetReflectorThickness(_UIDAUcmdReflectorThickness->GetNewDoubleValue(newValue));}
+if(_UIcmd == _UIDAUcmdFilterThickness) {_DC -> SetFilterThickness(_UIDAUcmdFilterThickness->GetNewDoubleValue(newValue));}
+if(_UIcmd == _UIDAUcmdCollimatorDiameter) {_DC -> SetCollimatorHoleDiameter(_UIDAUcmdCollimatorDiameter->GetNewDoubleValue(newValue));}
+if(_UIcmd == _UIDAUcmdCollimatorLiningThickness) {_DC->SetCollimatorLayerThickness(_UIDAUcmdCollimatorLiningThickness->GetNewDoubleValue(newValue));}
+if(_UIcmd == _UIDAUcmdCollimatorLength) {_DC -> SetCollimatorLength(_UIDAUcmdCollimatorLength->GetNewDoubleValue(newValue));}
+if(_UIcmd == _UIScmdFilterMaterial) {_DC -> SetFilterMaterial(newValue);}
+if(_UIcmd == _UIScmdReflectorMaterial) {_DC -> SetReflectorMaterial(newValue);}
+if(_UIcmd == _UIScmdModeratorMaterial) {_DC -> SetModeratorMaterial(newValue);}
+if(_UIcmd == _UIScmdCollimatorMaterial) {_DC -> SetCollimatorMaterial(newValue);}
+if(_UIcmd == _UIScmdCollimatorLiningMaterial) {_DC -> SetCollimatorLayerMaterial(newValue);}
 }
 
 

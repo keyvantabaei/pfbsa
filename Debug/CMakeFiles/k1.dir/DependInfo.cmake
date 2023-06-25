@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/k1/prj/g4/pfBSA/src/Detector.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/Detector.cc.o"
   "/home/k1/prj/g4/pfBSA/src/DetectorHit.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/DetectorHit.cc.o"
   "/home/k1/prj/g4/pfBSA/src/HistoManager.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/HistoManager.cc.o"
-  "/home/k1/prj/g4/pfBSA/src/PhysicsList.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/PhysicsList.cc.o"
   "/home/k1/prj/g4/pfBSA/src/k1AI.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/k1AI.cc.o"
   "/home/k1/prj/g4/pfBSA/src/k1DC.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/k1DC.cc.o"
   "/home/k1/prj/g4/pfBSA/src/k1DM.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/k1DM.cc.o"
@@ -16,7 +15,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/k1/prj/g4/pfBSA/src/k1Geometery.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/k1Geometery.cc.o"
   "/home/k1/prj/g4/pfBSA/src/k1PG.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/k1PG.cc.o"
   "/home/k1/prj/g4/pfBSA/src/k1RA.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/k1RA.cc.o"
-  "/home/k1/prj/g4/pfBSA/src/k1StackA.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/k1StackA.cc.o"
   "/home/k1/prj/g4/pfBSA/src/phantomHit.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/phantomHit.cc.o"
   "/home/k1/prj/g4/pfBSA/src/phantomSD.cc" "/home/k1/prj/g4/pfBSA/Debug/CMakeFiles/k1.dir/src/phantomSD.cc.o"
   )
@@ -39,7 +37,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "PTL_BUILD_DLL"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
-  "QT_NO_DEBUG"
   "QT_OPENGL_LIB"
   "QT_PRINTSUPPORT_LIB"
   "QT_WIDGETS_LIB"

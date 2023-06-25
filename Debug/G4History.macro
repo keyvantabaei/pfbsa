@@ -75,7 +75,8 @@
 /vis/viewer/flush
 /vis/viewer/refresh viewer-0
 /vis/viewer/update viewer-0
-/vis/set/touchable world_PHYSI 0 collimatorP 0
-/vis/set/touchable world_PHYSI 0 collimatorP 0
-/vis/set/touchable world_PHYSI 0 collimatorP 0
-/vis/set/touchable world_PHYSI 0 collimatorP 0
+/vis/set/touchable world_PHYSI 0 wallP 0
+/vis/set/touchable world_PHYSI 0 phantomaroundP 0
+/vis/set/touchable world_PHYSI 0 phantomcollimatorP 0
+/vis/set/touchable world_PHYSI 0 collimator_cover_p 0
+/vis/set/touchable world_PHYSI 0 collimator_cover_p 0
